@@ -1,7 +1,7 @@
 // string, number, boolean, array, undefined, null, any
 
-let firstName: string | null;
-firstName = 'Dan';
+let firstName: string | null | undefined;
+firstName = 'Ola';
 
 let age: number;
 age = 45;
@@ -28,6 +28,10 @@ enum ProductType {
   Groceries,
 }
 let pt = ProductType.Sports;
+let pt2 = ProductType.HomeGoods;
 if (pt === ProductType.Sports) {
   console.log('Found sports product type.');
+}
+else if (pt2 == ProductType.HomeGoods) {
+  console.log('Created my own Enum')
 }
